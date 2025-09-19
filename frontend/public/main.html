@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-rocket logo-icon"></i>
+                <h1>AI Gen</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-compass"></i> Explore</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> 나의 창작물</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="login.html" class="btn btn-primary">Sign Up</a>
+                <button id="themeToggle" class="theme-toggle">🌙 다크/라이트</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="prompt-section">
+                <div class="prompt-input-wrapper">
+                    <input type="text" placeholder="Imagine something... a futuristic city in the style of Van Gogh">
+                    <button class="btn-generate">Generate</button>
+                </div>
+            </header>
+
+            <section class="gallery">
+                <!-- Gallery items will be populated here -->
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/1/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">a majestic lion with a crown of stars, photorealistic</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/2/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">a serene japanese garden in the rain, anime style</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/3/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">cyberpunk city street at night, neon lights, cinematic</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/4/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">an ancient library filled with glowing books, fantasy art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/5/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">a robot playing a grand piano in a forest, surrealism</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/6/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">portrait of an astronaut looking at Earth from the moon, detailed</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/7/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">underwater world with glowing jellyfish and ancient ruins</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/8/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">a cup of coffee with the galaxy swirling inside it, digital art</p>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/9/400/400" alt="AI generated image">
+                    <div class="overlay">
+                        <p class="prompt-text">a dragon made of crystal sleeping on a mountain of gold</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
