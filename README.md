@@ -1,2 +1,2 @@
-# frontrend
+# frontend
 GenAI frontend
