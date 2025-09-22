@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>회원가입 | Aimage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="wrap">
+    <section class="card modal">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">HI</div>
+        <div>
+          <h1 id="title" class="brand__name">PIXEL 가입</h1>
+          <p id="subtitle" class="subtitle">프롬프트로 이미지를 만들고 공유하세요.</p>
+        </div>
+      </div>
+
+      <form action="login.html" >
+        <div class="field">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" class="input" placeholder="id@example.com" required />
+          <button class="btn" type="button" onclick="alert('확인')">중복확인</button>
+        </div>
+
+        <div class="field" style="display: none;">
+          <label for="name">사용자 이름</label>
+          <input type="text" id="name" name="name" class="input" placeholder="홍길동" minlength="2" required />
+          <button class="btn" type="submit">회원가입</button>
+        </div>
+
+        <p class="footer">이미 계정이 있으신가요? <a href="login.html">로그인</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
