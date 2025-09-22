@@ -13,7 +13,7 @@
 | 구분 | 기술 |
 | :--- | :--- |
 | **Frontend** | `React`, `Vite`, `JavaScript`, `Bootstrap` |
-| **Backend** | `Python`, `FastAPI`, `uv`, `Comfyui` |
+| **Backend** | `Python`, `FastAPI`, `uv`, `Comfyui`, 'MariaDB' |
 | **AI Models** | • **LLM**: `GPT-OSS 20B`<br>• **Image**: `Flux`<br>• **Video**: `Wan` |
 | **Deployment** | • **Frontend**: `Cloudflare Pages`<br>• **Backend**: `Render` |
 | **Version Control** | `Git`, `GitHub` |
@@ -25,7 +25,7 @@
 
 
 ## 🧑‍💻 팀원
-| 팀장 | 팀원 | 팀원 |
-|:-----:|:--------:|:---------:|
+| 팀장 | 팀원 |
+|:-----:|:--------:|
 | [<img src="https://github.com/Yangjeongwon1133.png" width="80" alt="양정원"/>](https://github.com/Yangjeongwon1133) | [<img src="https://github.com/junghyun3369.png" width="80" alt="이정현"/>](https://github.com/junghyun3369)  |
 | [양정원](https://github.com/Yangjeongwon1133) | [이정현](https://github.com/junghyun3369) |
