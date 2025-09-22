@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loading-box {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 40px;
+    width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.cancel-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.spinner {
+    width: 100px;
+    height: 100px;
+    border: 8px solid #333;
+    border-top-color: #8A2BE2;
+    border-right-color: #DC143C; 
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin: 20px auto 30px;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.loading-box h1 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+.loading-box p {
+    margin: 0;
+    color: #a0a0a0;
+    font-size: 16px;
+}

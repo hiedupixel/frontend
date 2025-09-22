@@ -1,0 +1,157 @@
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+}
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #7b5cff;
+}
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.profile-info p {
+  margin: 6px 0;
+  color: #bbb;
+}
+.profile-actions button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.follow-btn {
+  background-color: #27346d;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tab {
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  color: #aaa;
+  transition: 0.3s;
+}
+.tab.active {
+  border-bottom: 3px solid #4b4b4b;
+  color: #fff;
+  font-weight: bold;
+}
+.tab:hover {
+  color: #fff;
+}
+
+.grid {
+  column-count: 4;
+  column-gap: 16px;
+}
+.grid-card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+.grid-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.grid-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .grid { column-count: 3; }
+}
+@media (max-width: 900px) {
+  .grid { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .grid { column-count: 1; }
+}
+
+/* 팝업 모달 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  min-height: 265px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 구독 목록 li */
+.modal ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 이미지와 텍스트 간격 */
+  padding: 10px;
+  border-bottom: 1px solid #2c2c2c;
+  color: #bbb;
+}
+.modal ul li:last-child {
+  border-bottom: none;
+}
+.modal ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #7b5cff;
+  object-fit: cover;
+}
+.modal ul li span {
+  font-size: 16px;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
