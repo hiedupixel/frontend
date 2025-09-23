@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>로그인 모달 (HTML 데모)</title>
+  <!-- <link rel="stylesheet" href="./index.css" /> -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  
+  <div class="overlay" aria-hidden="true"></div>
+
+  <section class="card modal">
+    <div class="brand" style="margin-bottom: 6px;">
+      <div class="brand__logo" aria-hidden="true">HI</div>
+      <div>
+        <h2 id="loginTitle" class="brand__name">로그인</h2>
+        <p id="loginDesc" class="subtitle">계정으로 PIXEL에 접속하세요.</p>
+      </div>
+    </div>
+
+    <form action="email.html">
+      <div class="field">
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" class="input" placeholder="id@example.com" required />
+      </div>
+      <button class="btn" type="submit">이메일 인증</button>
+      <p class="footer">계정이 없으신가요? <a href="signup.html">회원가입</a></p>
+    </form>
+  </section>
+</body>
+</html>

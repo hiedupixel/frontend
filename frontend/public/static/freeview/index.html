@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="dark-mode">
+
+    <div id="image-modal" class="modal-overlay">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="user-info">
+                    <img src="https://picsum.photos/seed/user1/50/50" alt="User avatar" class="avatar">
+                    <span class="username">ArtisticAI</span>
+                </div>
+                <div class="header-buttons">
+                    <button class="follow-btn">팔로우</button>
+                    <button class="close-button">&times;</button>
+                </div>
+            </header>
+
+            <section class="prompt-section">
+                <p class="prompt-text">a majestic lion with a crown of stars, photorealistic, cinematic lighting, 8k</p>
+                <button class="copy-btn">
+                    <i class="fa-regular fa-copy"></i> 프롬프트 복사
+                </button>
+            </section>
+            
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1599839958368-1549c71c0803?q=80&w=1287&auto-format&fit=crop" alt="Enlarged AI art" class="modal-image">
+                <button class="view-original-btn">
+                    <i class="fa-solid fa-expand"></i> 원본 사이즈
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <div class="actions-bar">
+                    <button class="like-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="comment-btn">
+                        <i class="fa-regular fa-comment"></i>
+                    </button>
+                </div>
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="코멘트 남기기...">
+                    <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
