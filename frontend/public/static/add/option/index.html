@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt with Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"></div>
+      <nav class="nav">
+        <button class="nav-item active"></button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-bottom"></div>
+    </aside>
+
+    <main class="content">
+      <section class="prompt-card">
+        <div class="prompt-row">
+          <textarea
+            class="prompt-input"
+            placeholder="Imagine something... a futuristic city in the style of Van Gogh"
+          ></textarea>
+
+          <div class="prompt-actions">
+            <button
+              id="settingsToggle"
+              class="settings-btn"
+              aria-haspopup="true"
+              aria-expanded="false"
+              title="Settings"
+              onclick="document.getElementById('settingsPanel').toggleAttribute('hidden')"
+            >⚙</button>
+            <button class="primary-btn generate-btn">Generate</button>
+          </div>
+        </div>
+
+        <div id="settingsPanel" class="settings-panel" hidden>
+          
+          <div class="setting-group image-size-group">
+            <div class="setting-header">
+              <span class="setting-title">Image Size</span>
+              <span class="setting-desc">선호하는 이미지 비율을 선택하세요</span>
+            </div>
+
+            <div class="ratio-controls">
+              <input type="radio" name="ratio" id="ratioPortrait" value="portrait" />
+              <label for="ratioPortrait" class="pill">Portrait (512x768)</label>
+
+              <input type="radio" name="ratio" id="ratioSquare" value="square" checked />
+              <label for="ratioSquare" class="pill">Square (512x512)</label>
+
+              <input type="radio" name="ratio" id="ratioLandscape" value="landscape" />
+              <label for="ratioLandscape" class="pill">Landscape (768x512)</label>
+
+              <div class="image-preview">
+                <div class="preview-box portrait">2:3</div>
+                <div class="preview-box square">1:1</div>
+                <div class="preview-box landscape">3:2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="setting-group">
+            <div class="setting-header">
+              <span class="setting-title">K-Sampler</span>
+              <span class="setting-desc">샘플링 관련 설정</span>
+            </div>
+
+            <div class="select-row">
+              <span class="setting-desc">Seed</span>
+              <input type="number" min="1" max="999999999" value="1" />
+            </div>
+
+            <div class="select-row">
+              <span class="setting-desc">Step</span>
+              <input type="number" min="1" max="20" value="1" />
+            </div>
+            
+            <div class="select-row">
+              <span class="setting-desc">Control after generate</span>
+              <select class="sampler-select">
+                <option value="randomize">Randomize</option>
+              </select>
+            </div>
+
+            <div class="select-row">
+              <span class="setting-desc">CFG</span>
+              <input type="number" min="1" max="20" value="7" />
+            </div>
+            
+            <div class="select-row">
+              <span class="setting-desc">Sampler name</span>
+              <select class="sampler-select">
+                <option value="euler">Euler</option>
+                <option value="euler_a">Euler a</option>
+                <option value="ddim">DDIM</option>
+                <option value="plms">PLMS</option>
+              </select>
+            </div>
+
+            <div class="select-row">
+              <span class="setting-desc">Scheduler</span>
+              <select class="sampler-select">
+                <option value="normal">Normal</option>
+              </select>
+            </div>
+
+            <div class="select-row">
+              <span class="setting-desc">Denoise</span>
+              <input type="number" min="1" max="20" value="1" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="workarea"></div>
+    </main>
+  </div>
+</body>
+</html>
